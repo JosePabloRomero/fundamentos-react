@@ -21,7 +21,9 @@ class InputControlado extends Component{
         if (text.trim() !== '' && text.trim().length < 5) {
             color = 'red'
         }
+
         this.setState({ text,color })
+        this.props.onChange(this.props.name, text)
     }
     render(){
         const styles = {
@@ -35,19 +37,44 @@ class InputControlado extends Component{
                 value={this.state.text}
                 onChange={this.actualizar}
                 style={styles}
+                placeholder={this.props.placeholder}
             />
         )
     }
 }
 
 class App extends Component{
+    state = {
+        name: '',
+        email: ''
+    }
+    actualizar = (name, text) => {
+        this.setState({
+            [name]: text
+        })
+    }
     render(){
         return(
             <div>
                 <h1>
                     Inputs Controlados <Alien/>                    
                 </h1>
-                <InputControlado></InputControlado>
+                <InputControlado 
+                    onChange={this.actualizar}
+                    name='name'
+                    placeholder='Nombre Completo'
+                />
+                <InputControlado 
+                    onChange={this.actualizar}
+                    name='email'
+                    placeholder='Tu Email'
+                />
+                <h2>
+                    Nombre: {this.state.name}
+                </h2>
+                <h2>
+                    Email: {this.state.email}
+                </h2>
             </div>
         )
     }
