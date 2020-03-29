@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 
 
 const Ninja = () => (
-    <span role='img' arial-label='ninja'>
+    <span role='img' aria-label='ninja'>
         🐱‍👤
     </span>
 )

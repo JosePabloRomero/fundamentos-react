@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import styles from './InputNoControlado.module.css'
+//import styles from './InputNoControlado.module.css'
 
 const Unicorn = () => (
-    <span role='img' arial-label='unicorn'>
+    <span role='img' aria-label='unicorn'>
         🦄
     </span>
 )
