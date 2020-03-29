@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import styles from './Formulario.module.css'
+import styles from './InputNoControlado.module.css'
 
 const Unicorn = () => (
     <span role='img' arial-label='unicorn'>
