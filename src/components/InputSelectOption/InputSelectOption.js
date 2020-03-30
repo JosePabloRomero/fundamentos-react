@@ -6,6 +6,36 @@ const Carrito = () => (
     </span>
 )
 
+class CheckBox extends Component {
+    state = {
+        active: true
+    }
+    handleChange = (event) => {
+        this.setState({
+            active: event.target.checked
+        })
+    }
+    render() {
+        const {active} = this.state
+        return (
+            <div>
+                {active && (
+                    <h1>
+                        Etiqueta CheckBox
+                    </h1>
+                )}
+                <form>
+                    <input
+                        type="checkbox"
+                        checked={active}
+                        onChange={this.handleChange}
+                    />
+                </form>
+            </div>
+        )
+    }
+}
+
 class App extends Component {
     state = {
         techs: ['Vue']
@@ -24,7 +54,7 @@ class App extends Component {
         return (
             <div>
                 <h1>
-                    Etiqueta Select <Carrito/>
+                    Etiqueta Select <Carrito />
                 </h1>
                 <form>
                     <select
@@ -45,6 +75,7 @@ class App extends Component {
                         </li>
                     ))}
                 </ul>
+                <CheckBox />
             </div>
         )
     }
