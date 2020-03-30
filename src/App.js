@@ -5,7 +5,8 @@ import InputControlado from './components/InputControlado'
 import InputSelectOption from './components/InputSelectOption' */
 //import LlamadaAPI from './components/LlamadaAPI'
 //import BuscadorPeliculas from './components/BuscadorPeliculas'
-import LifeCicle from './components/LifeClicle'
+//import LifeCicle from './components/LifeClicle'
+import Chat from './components/Chat'
 const App = () => (
     <div>
         {/* {<InputNoControlado></InputNoControlado>        
@@ -15,7 +16,7 @@ const App = () => (
         <LlamadaAPI/>        
         <BuscadorPeliculas/>
         */}
-        <LifeCicle></LifeCicle>
+        <Chat></Chat>
     </div>
 )
 export default App
