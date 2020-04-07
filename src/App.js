@@ -14,7 +14,8 @@ import InputSelectOption from './components/InputSelectOption' */
 //import Comunicacion3 from './components/ComunicacionComponentes/Comunicacion3'
 //import RenderPattern from './components/ComunicacionComponentes/RenderPattern'
 //import HocPattern from './components/ComunicacionComponentes/HocPattern'
-import HocPattern2 from './components/ComunicacionComponentes/HocPattern2'
+//import HocPattern2 from './components/ComunicacionComponentes/HocPattern2'
+import Hooks1 from './components/Hooks/Hooks1'
 const App = () => (
     <div>
         {/* {<InputNoControlado></InputNoControlado>        
@@ -30,10 +31,10 @@ const App = () => (
         <ObserverPattern></ObserverPattern>        
         <Comunicacion3></Comunicacion3>        
         <RenderPattern></RenderPattern>
-        <HocPattern></HocPattern>
-        */}
+        <HocPattern></HocPattern>        
         <HocPattern2></HocPattern2>
-        
+        */}
+        <Hooks1></Hooks1>
     </div> 
 )
 export default App
