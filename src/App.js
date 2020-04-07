@@ -10,7 +10,8 @@ import InputSelectOption from './components/InputSelectOption' */
 //import Tareas from './components/Tareas'
 //import Comunicacion1 from './components/ComunicacionComponentes/Comunicacion1'
 //import Comunicacion2 from './components/ComunicacionComponentes/Comunicacion2'
-import ObserverPattern from './components/ComunicacionComponentes/ObserverPattern'
+//import ObserverPattern from './components/ComunicacionComponentes/ObserverPattern'
+import Comunicacion3 from './components/ComunicacionComponentes/Comunicacion3'
 const App = () => (
     <div>
         {/* {<InputNoControlado></InputNoControlado>        
@@ -22,9 +23,10 @@ const App = () => (
         <Chat></Chat>        
         <Tareas></Tareas>        
         <Comunicacion1></Comunicacion1>        
-        <Comunicacion2></Comunicacion2>
-        */}
+        <Comunicacion2></Comunicacion2>        
         <ObserverPattern></ObserverPattern>
+        */}
+        <Comunicacion3></Comunicacion3>
     </div> 
 )
 export default App
