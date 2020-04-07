@@ -97,8 +97,6 @@ class App extends Component {
                 <ComponentA num={numA} onAdd={this.handleAddB}></ComponentA>
                 <ComponentB num={numB} onAdd={this.handleAddA}></ComponentB>
             </div>
-
-
         )
     }
 }
