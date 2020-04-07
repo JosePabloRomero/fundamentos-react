@@ -7,8 +7,9 @@ import InputSelectOption from './components/InputSelectOption' */
 //import BuscadorPeliculas from './components/BuscadorPeliculas'
 //import LifeCicle from './components/LifeClicle'
 //import Chat from './components/Chat'
-import Tareas from './components/Tareas'
-import Comunicacion1 from './components/ComunicacionComponentes/Comunicacion1'
+//import Tareas from './components/Tareas'
+//import Comunicacion1 from './components/ComunicacionComponentes/Comunicacion1'
+import Comunicacion2 from './components/ComunicacionComponentes/Comunicacion2'
 const App = () => (
     <div>
         {/* {<InputNoControlado></InputNoControlado>        
@@ -18,9 +19,10 @@ const App = () => (
         <LlamadaAPI/>        
         <BuscadorPeliculas/>        
         <Chat></Chat>        
-        <Tareas></Tareas>
-        */}
+        <Tareas></Tareas>        
         <Comunicacion1></Comunicacion1>
+        */}
+        <Comunicacion2></Comunicacion2>
     </div> 
 )
 export default App
