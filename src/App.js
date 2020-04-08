@@ -15,7 +15,10 @@ import InputSelectOption from './components/InputSelectOption' */
 //import RenderPattern from './components/ComunicacionComponentes/RenderPattern'
 //import HocPattern from './components/ComunicacionComponentes/HocPattern'
 //import HocPattern2 from './components/ComunicacionComponentes/HocPattern2'
-import Hooks1 from './components/Hooks/Hooks1'
+//import Hooks1 from './components/Hooks/Hooks1'
+//import Hooks2 from './components/Hooks/Hooks2'
+//import EjemploPracticoHooks from './components/Hooks/EjemploPracticoHooks'
+import EjemploPracticoHooks2 from './components/Hooks/EjemploPracticoHooks2'
 const App = () => (
     <div>
         {/* {<InputNoControlado></InputNoControlado>        
@@ -33,8 +36,13 @@ const App = () => (
         <RenderPattern></RenderPattern>
         <HocPattern></HocPattern>        
         <HocPattern2></HocPattern2>
-        */}
         <Hooks1></Hooks1>
+        <Hooks2></Hooks2>
+        <EjemploPracticoHooks></EjemploPracticoHooks>
+        */}       
+        
+        <EjemploPracticoHooks2></EjemploPracticoHooks2>
+        
     </div> 
 )
 export default App
