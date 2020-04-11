@@ -12,7 +12,7 @@ const Counter = React.memo(({ count }) => {
     )
 })
 
-const Title =  React.memo(({ text }) => {
+const Title = React.memo(({ text }) => {
     console.log('Render <Title />')
 
     return (
@@ -21,6 +21,22 @@ const Title =  React.memo(({ text }) => {
         </h1>
     )
 })
+
+const TitleNested = React.memo(({ info }) => {
+    console.log('Render <Title />')
+
+    return (
+        <h1>
+            {info.text}
+        </h1>
+    )
+},
+    (prevProps, nextProps) => {
+        // si retorna true no se renderiza
+        //si retorna false si se renderiza
+        return prevProps === nextProps
+     }
+)
 
 const App = () => {
     const [title, setTitle] = useState('')
@@ -39,6 +55,7 @@ const App = () => {
             <button onClick={handleAdd}>Add</button>
             <Counter count={count} />
             <Title text={title} />
+            <TitleNested info={{ text: title }} />
         </div>
     )
 }
