@@ -18,7 +18,8 @@ import InputSelectOption from './components/InputSelectOption' */
 //import Hooks1 from './components/Hooks/Hooks1'
 //import Hooks2 from './components/Hooks/Hooks2'
 //import EjemploPracticoHooks from './components/Hooks/EjemploPracticoHooks'
-import EjemploPracticoHooks2 from './components/Hooks/EjemploPracticoHooks2'
+//import EjemploPracticoHooks2 from './components/Hooks/EjemploPracticoHooks2'
+import Hooks3 from './components/Hooks/Hooks3'
 const App = () => (
     <div>
         {/* {<InputNoControlado></InputNoControlado>        
@@ -39,9 +40,10 @@ const App = () => (
         <Hooks1></Hooks1>
         <Hooks2></Hooks2>
         <EjemploPracticoHooks></EjemploPracticoHooks>
-        */}       
-        
         <EjemploPracticoHooks2></EjemploPracticoHooks2>
+        */}               
+        <Hooks3></Hooks3>
+        
         
     </div> 
 )
