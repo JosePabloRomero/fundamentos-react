@@ -23,7 +23,9 @@ import InputSelectOption from './components/InputSelectOption' */
 //import Hooks4 from './components/Hooks/Hooks4'
 //import Hooks5 from './components/Hooks/Hooks5'
 //import Hooks6 from './components/Hooks/Hooks6'
-import HooksPersonalizados from './components/Hooks/HooksPersonalizados'
+//import HooksPersonalizados from './components/Hooks/HooksPersonalizados'
+//import { Counter, Title, Button } from './components/Children/Counter'
+import Lazy  from './components/Lazy/Lazy.js'
 const App = () => (
     <div>
         {/* {<InputNoControlado></InputNoControlado>        
@@ -49,14 +51,27 @@ const App = () => (
         <Hooks4></Hooks4>
         <Hooks5></Hooks5>
         <Hooks6></Hooks6>
-        */}               
         <HooksPersonalizados></HooksPersonalizados>
-        
-        
-        
-        
-        
-        
-    </div> 
+        */}
+
+        {/* <Counter>
+            <Title />          
+            <Title>
+                {(clicks) =>(
+                    <div style={{color: 'purple'}}>
+                        <h1>{clicks}</h1>
+                    </div>                    
+                )}
+            </Title>
+            <Button type='increment'/> 
+            <Button type='decrement'/>             
+        </Counter> */}
+        <Lazy></Lazy>
+
+
+
+
+
+    </div>
 )
 export default App
